@@ -1,0 +1,19 @@
+.footer_for-pomodoro {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: var(--light-bg);
+    background: var(--primary-color);
+    margin: 0 1.5rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.footer_for-pomodoro:hover {
+    background-color: var(--light-color);
+}
+
+.credit span {
+    color: var(--light-bg);
+}
