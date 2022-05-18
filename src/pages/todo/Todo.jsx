@@ -20,7 +20,8 @@ function Todo() {
 				<header className="p-1 mb-1 text-center">
 					<h1 className="h2 text-6xl py-4 font-semibold">Welcome back</h1>
 					<p className="text-2xl font-serif mb-4">
-						You have {tasks.length} task for today.
+						You have {tasks.length === 0 ? "no" : tasks.length}{" "}
+						{tasks.length > 1 ? "tasks" : "task"} for today.
 					</p>
 				</header>
 
@@ -31,6 +32,7 @@ function Todo() {
 							<FaPlusCircle title="Add task" />
 						</button>
 					</header>
+					<hr className="p-2"></hr>
 					{tasks.map((task) => {
 						return <TodoCard task={task} key={task.id} />;
 					})}

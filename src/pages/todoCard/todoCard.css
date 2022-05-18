@@ -1,0 +1,13 @@
+.task-card {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.task-link {
+    display: block;
+    flex-grow: 1;
+}
+
+.pointer-cursor {
+    color: var(--primary-color);
+}

@@ -6,7 +6,7 @@ import { useEscape } from "../../hooks/useEscape";
 import { updateLocalStorage } from "../../utils/task-utils";
 import { Modal } from "../Pages";
 import { ShowPortal } from "../../components/Components";
-
+import "./todoCard.css";
 function TodoCard({ task }) {
 	const { id, title, time, description } = task;
 	const [isEditing, setIsEditing] = useState(false);
@@ -27,19 +27,19 @@ function TodoCard({ task }) {
 		<div className="task-wrapper">
 			<section className="task-card flex justify-between align-center">
 				<Link to="/pomoclock" state={{ task }} className="task-link">
-					<p className="task-title">{title}</p>
+					<p className="task-title text-2xl p-4">{title}</p>
 				</Link>
 				<div className="flex">
 					<button className="btn" onClick={editHandler}>
 						<FaEdit
-							className="pointer-cursor"
+							className="pointer-cursor text-2xl p-0"
 							fontSize="1.1rem"
 							title="Edit task"
 						/>
 					</button>
 					<button className="btn ml-sm" onClick={() => deleteHandler(id)}>
 						<FaTrashAlt
-							className="pointer-cursor"
+							className="pointer-cursor text-2xl"
 							fontSize="1.1rem"
 							title="Delete Task"
 						/>
