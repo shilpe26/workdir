@@ -1,0 +1,21 @@
+.todo-container {
+  background: linear-gradient(to left, var(--light-color), var(--light-bg), var(--primary-color));
+}
+
+.add-PlusBtn {
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 769px) {
+
+  .todo-container,
+  .pomoclock-main {
+    margin-left: 270px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .todo-container {
+    margin-left: auto;
+  }
+}
