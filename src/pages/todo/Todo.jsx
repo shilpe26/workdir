@@ -4,6 +4,7 @@ import { useTodo } from "../../Context/todo-context";
 import { getTasks } from "./TodoFunc";
 import { FaPlusCircle } from "react-icons/fa";
 import { Modal, TodoCard } from "../Pages";
+import { useTitle } from "../../hooks/useTitle";
 import "./todo.css";
 function Todo() {
 	const [show, setShow] = useState(false);
@@ -14,6 +15,7 @@ function Todo() {
 	useEffect(() => {
 		setTasks(getTasks());
 	}, []);
+	useTitle("Task | Clockwork");
 	return (
 		<div>
 			<main className="todo-container p-2 my-64 mx-auto rounded max-w-screen-md">

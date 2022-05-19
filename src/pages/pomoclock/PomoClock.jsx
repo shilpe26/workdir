@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTitle } from "../../hooks/useTitle";
 import { FaPlay, FaPause, FaStop } from "react-icons/fa";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
@@ -111,6 +112,11 @@ function PomoClock() {
 	const minutesLeft = Math.floor(seconds / 60);
 	const percentValue = (seconds / totalSeconds) * 100;
 
+	useTitle(
+		`${minutesLeft}:${secondsLeft} ${
+			pomoMode === "focus" ? "⏳" : "☕"
+		}  WORKDIR`
+	);
 	return (
 		<div>
 			<main className="pomoclock-container my-44 mx-auto">
