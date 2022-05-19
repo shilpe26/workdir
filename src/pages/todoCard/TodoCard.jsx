@@ -49,7 +49,7 @@ function TodoCard({ task }) {
 				{isEditing ? (
 					<ShowPortal>
 						<Modal
-							taskToEdit={task}
+							editTask={task}
 							title={title}
 							description={description}
 							time={time}
