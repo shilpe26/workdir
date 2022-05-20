@@ -14,7 +14,8 @@ function Todo() {
 
 	useEffect(() => {
 		setTasks(getTasks());
-	}, []);
+	}, [setTasks]);
+
 	useTitle("Task | Workdir");
 	return (
 		<div>

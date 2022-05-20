@@ -12,5 +12,5 @@ export function useEscape(setShow) {
 		return () => {
 			document.body.removeEventListener("keydown", closeOnEscape);
 		};
-	}, [closeOnEscape]);
+	}, []);
 }
