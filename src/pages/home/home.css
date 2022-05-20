@@ -45,15 +45,16 @@
         max-width: 100%;
         top: 4rem;
     }
-
+    .content-note{
+        margin: auto;
+    }
     .content-note h2 {
-        margin-top: 18rem;
-        margin-left: -2rem;
+        margin-left: 2rem;
         font-size: 6rem;
     }
 
     .para-note {
-        margin-left: -2rem;
+        margin-left: 2rem;
         font-size: 1.8rem;
     }
 

@@ -1,4 +1,10 @@
-.pomodoro-nav{
+.pomodoro-nav {
     background-color: var(--light-color);
     height: 22vh;
+}
+
+@media (max-width:786px) {
+    .pomodoro-nav {
+        height: 14vh;
+    }
 }
