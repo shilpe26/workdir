@@ -21,6 +21,8 @@
 ![Screenshot (559)](https://user-images.githubusercontent.com/56014170/169539505-0c95d77f-175b-4041-a45d-67ed6c05d6a9.png)
 
 <strong>TIME SYNC WITH TITLE</strong>
+
+
 ![Screenshot (559)](https://user-images.githubusercontent.com/56014170/169539590-d71ecd82-603f-437a-a3bb-3e8c64b5504f.png)
 
 ### Built With
