@@ -43,8 +43,14 @@
         top: 4rem;
     }
 
-    .content-note {
-        margin-top: 0.3rem;
+    .content-note h2 {
+        margin-top: 18rem;
+        margin-left: -2rem;   
+        font-size: 6rem;
+    }
+    .para-note{
+        margin-left: -2rem;   
+        font-size: 1.8rem;
     }
 
     .account-detail {

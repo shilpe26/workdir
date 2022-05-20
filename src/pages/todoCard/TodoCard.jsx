@@ -28,14 +28,17 @@ function TodoCard({ task }) {
 					<p className="task-title text-2xl p-4">{title}</p>
 				</Link>
 				<div className="flex">
-					<button className="btn" onClick={editHandler}>
+					<button className="btn edit-delete-btn" onClick={editHandler}>
 						<FaEdit
 							className="pointer-cursor text-2xl p-0"
 							fontSize="1.1rem"
 							title="Edit task"
 						/>
 					</button>
-					<button className="btn ml-sm" onClick={() => deleteHandler(id)}>
+					<button
+						className="btn ml-sm edit-delete-btn"
+						onClick={() => deleteHandler(id)}
+					>
 						<FaTrashAlt
 							className="pointer-cursor text-2xl"
 							fontSize="1.1rem"

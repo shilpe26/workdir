@@ -65,7 +65,9 @@ button:last-child {
 
     .task-details {
         text-align: center;
-        margin-top: 4rem;
+        margin-top: 6rem;
+width: 50%;
+margin-left: 13rem;
     }
 }
 
