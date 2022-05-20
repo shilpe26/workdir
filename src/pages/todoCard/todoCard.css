@@ -11,10 +11,11 @@
 .pointer-cursor {
     color: var(--primary-color);
 }
-@media (max-width:786px){
-    .btn.edit-delete-btn{
-       min-width: 5rem;
+
+@media (max-width:786px) {
+    .btn.edit-delete-btn {
+        min-width: 5rem;
         height: 3.5rem;
-        margin-top:1rem;
+        margin-top: 1rem;
     }
 }
