@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useEscape } from "../../hooks/useEscape";
 import { addTask } from "../../utils/add-task";
 import { LabelHidden } from "./LabelHidden";
 import { useTodo } from "../../Context/todo-context";
@@ -22,8 +21,6 @@ export function Modal({
 	const [errorMessage, setErrorMessage] = useState("");
 
 	const { tasks, setTasks } = useTodo();
-
-	useEscape(setShow);
 
 	const modalHandler = (e) => {
 		const { id: key, value } = e.target;

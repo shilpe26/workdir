@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
 import { useTodo } from "../../Context/todo-context";
-import { useEscape } from "../../hooks/useEscape";
 import { updateLocalStorage } from "../../utils/task-utils";
 import { Modal } from "../Pages";
 import { ShowPortal } from "../../components/Components";
@@ -21,7 +20,6 @@ function TodoCard({ task }) {
 		setTasks(updatedTask);
 		updateLocalStorage(updatedTask);
 	}
-	useEscape(setIsEditing);
 
 	return (
 		<div className="task-wrapper">
