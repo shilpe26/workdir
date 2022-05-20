@@ -115,7 +115,7 @@ function PomoClock() {
 	useTitle(
 		`${minutesLeft}:${secondsLeft} ${
 			pomoMode === "focus" ? "⏳" : "☕"
-		}  WORKDIR`
+		} | WORKDIR`
 	);
 	return (
 		<div>

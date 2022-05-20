@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import LandingImage from "../../assests/pomo-home.png";
 import "./home.css";
@@ -31,11 +30,7 @@ function Home() {
 			</div>
 
 			<div className="image-note">
-				<img
-					src={LandingImage}
-					alt="landing-page-image"
-					className="bottom-12"
-				/>
+				<img src={LandingImage} alt="landing-page" className="bottom-12" />
 			</div>
 		</div>
 	);

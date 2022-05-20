@@ -10,18 +10,21 @@ function Footer() {
 						target="_blank"
 						rel="noreferrer"
 						className="fab fa-twitter footer_for-pomodoro"
+						aria-label="name"
 					></a>
 					<a
 						href="https://www.linkedin.com/in/shilpe-saxena-heartly-winner/"
 						target="_blank"
 						rel="noreferrer"
 						className="fab fa-linkedin footer_for-pomodoro"
+						aria-label="name"
 					></a>
 					<a
 						href="https://github.com/shilpe26"
 						target="_blank"
 						rel="noreferrer"
 						className="fab fa-github footer_for-pomodoro"
+						aria-label="name"
 					></a>
 				</div>
 				<div className="credit text-3xl text-center font-bold mt-8 py-3">
