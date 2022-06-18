@@ -1,6 +1,6 @@
 # ⌚WORKDIR
 
-### Workdir is an Pomodoro time management app. <strong>Do Remarkable Work! Stay Focused at work and get more done with Workdir.</strong>
+### Workdir is a Pomodoro time management app. <strong>Do Remarkable Work! Stay Focused at work and get more done with Workdir.</strong>
 
 ### Workdir Functionalities
 
