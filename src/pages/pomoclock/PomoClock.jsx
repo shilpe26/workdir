@@ -9,7 +9,7 @@ import "./pomoClock.css";
 function PomoClock() {
 	const location = useLocation();
 	const { task } = location.state;
-	const { title, description, time } = task;
+	const { title, description, time, tags } = task;
 
 	const clockInitalState = {
 		isStarted: false,
@@ -120,6 +120,18 @@ function PomoClock() {
 	return (
 		<div>
 			<main className="pomoclock-container my-44 mx-auto">
+				<section className="go-to-back absolute flex gap-4">
+					<Link to="/todo">
+						<button className="back-btn text-center text-2xl p-2 rounded-md">
+							<i className="fas fa-arrow-left"></i> Back To Tasks
+						</button>
+					</Link>
+					<Link to="/">
+						<button className="back-btn text-center text-2xl p-2 rounded-md px-4 py-2">
+							<i className="fas fa-home"></i> Home
+						</button>
+					</Link>
+				</section>
 				<section className="pomoclock">
 					<div className="pomoclock-bar my-4 mx-auto">
 						<CircularProgressbar
@@ -146,14 +158,14 @@ function PomoClock() {
 						/>
 					</div>
 
-					<div className="clock-btn grid my-8 mx-auto gap-4 text-center">
+					<div className="clock-btn grid my-8 mx-auto gap-4">
 						<button
 							className="btn btn-primary"
 							onClick={handleStart}
 							disabled={clockState.isStarted}
 						>
 							<span className="flex align-center justify-center">
-								<FaPlay className="mt-2" /> Start
+								<FaPlay className="mt-1" /> Start
 							</span>
 						</button>
 
@@ -189,7 +201,24 @@ function PomoClock() {
 						<h1 className="task-title text-5xl font-semibold text-center underline">
 							{title}
 						</h1>
-						<p className="task-description text-2xl mt-4">{description}</p>
+						<p className="task-description text-2xl mt-4">🔹{description}</p>
+						<p>
+							{tags.length !== 0 && (
+								<div className="mt-8">
+									<h3 className="text-3xl text-center font-bold">🏷️Tags:</h3>
+									<div className="flex flex-wrap gap-2 mt-4">
+										{tags.map((tag) => (
+											<span
+												className="tag-style rounded-xl p-3 font-semibold"
+												key={tag.id}
+											>
+												{tag.name}
+											</span>
+										))}
+									</div>
+								</div>
+							)}
+						</p>
 					</section>
 				</Link>
 			</main>

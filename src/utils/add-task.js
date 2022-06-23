@@ -10,9 +10,9 @@ export const addTask = (
 	onClose,
 	isEditing
 ) => {
-	const { title, description, time } = modalValues;
+	const { title, description, time, tags } = modalValues;
 
-	const isValidated = getValidated(title, description, time, setErrorMessage);
+	const isValidated = getValidated(title, description, time);
 
 	if (!isValidated) return;
 
@@ -35,8 +35,8 @@ export const addTask = (
 			title,
 			description,
 			time,
+			tags,
 		};
-
 		updatedTaskList = [...tasks, newTask];
 	}
 

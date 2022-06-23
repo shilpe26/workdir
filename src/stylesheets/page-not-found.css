@@ -1,0 +1,11 @@
+.error-404{
+    width: 50%;
+    height: 80vh;
+    margin-top:11rem;
+}
+@media (max-width: 786px){
+    .error-404{
+        height: 50vh;
+        margin-top: 14rem;
+    }
+}

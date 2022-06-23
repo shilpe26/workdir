@@ -18,7 +18,7 @@ function Home() {
 					<Link to="/todo">
 						<button
 							type="button"
-							className="btn btn-primary font-semibold cursor-pointer rounded-3xl p-4 mx-32"
+							className="btn btn-primary font-semibold cursor-pointer rounded-3xl p-2	 mx-32"
 						>
 							Join Now
 						</button>

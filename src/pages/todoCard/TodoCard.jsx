@@ -6,8 +6,9 @@ import { updateLocalStorage } from "../../utils/task-utils";
 import { Modal } from "../Pages";
 import { ShowPortal } from "../../components/Components";
 import "./todoCard.css";
+
 function TodoCard({ task }) {
-	const { id, title, time, description } = task;
+	const { id, title, time, description, tags } = task;
 	const [isEditing, setIsEditing] = useState(false);
 
 	const { tasks, setTasks } = useTodo();
@@ -57,6 +58,7 @@ function TodoCard({ task }) {
 							show={isEditing}
 							onClose={editHandler}
 							isEditing={true}
+							tags={tags}
 						></Modal>
 					</ShowPortal>
 				) : null}
