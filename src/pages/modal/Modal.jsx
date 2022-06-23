@@ -55,25 +55,6 @@ export function Modal({
 		}
 	}
 
-	// useEffect(() => {
-	// 	if (isEditing) {
-	// 		setFormData((val) => ({
-	// 			...val,
-	// 			title: title,
-	// 			description: description,
-	// 			time: time,
-	// 			tags: tags,
-	// 		}));
-	// 	} else {
-	// 		setFormData({
-	// 			title: "",
-	// 			description: "",
-	// 			time: "",
-	// 			tags: [],
-	// 		});
-	// 	}
-	// }, [isEditing]);
-
 	return (
 		<div
 			className={`modal-container flex items-center justify-center ${
@@ -125,11 +106,11 @@ export function Modal({
 							onChange={(e) => setTag(e.target.value)}
 							onKeyDown={handleTagAdd}
 						/>
-						<p>press space to enter tags</p>
+						<p className="text-red-400 text-lg">press space to enter tags</p>
 						<div className="tags-section">
 							{modalValues.tags.length !== 0 &&
 								modalValues.tags.map(({ id, name }) => (
-									<span className="tag" key={id}>
+									<span className="tag text-2xl mt-8 ml-4" key={id}>
 										{name}
 										<button
 											className="tag-delete-btn"
