@@ -6,6 +6,7 @@ import { FaPlusCircle } from "react-icons/fa";
 import { Modal, TodoCard } from "../Pages";
 import { useTitle } from "../../hooks/useTitle";
 import "./todo.css";
+
 function Todo() {
 	const [show, setShow] = useState(false);
 	const { tasks, setTasks } = useTodo();
