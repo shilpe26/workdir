@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { addTask } from "../../utils/add-task";
 import { LabelHidden } from "./LabelHidden";
 import { useTodo } from "../../Context/todo-context";
@@ -11,7 +11,6 @@ export function Modal({
 	description = "",
 	show,
 	onClose,
-	setShow,
 	isEditing,
 	editTask,
 	tags,
