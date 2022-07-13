@@ -18,7 +18,6 @@ function Todo() {
 	}, [setTasks]);
 
 	useTitle("Task | Workdir");
-
 	return (
 		<div>
 			<main className="todo-container p-2 my-64 mx-auto rounded max-w-screen-md">
