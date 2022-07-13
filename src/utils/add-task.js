@@ -7,11 +7,12 @@ export const addTask = (
 	modalValues,
 	setTasks,
 	onClose,
+	setErrorMessage,
 	isEditing
 ) => {
 	const { title, description, time, tags } = modalValues;
 
-	const isValidated = getValidated(title, description, time);
+	const isValidated = getValidated(title, description, time, setErrorMessage);
 
 	if (!isValidated) return;
 
