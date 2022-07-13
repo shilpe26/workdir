@@ -2,6 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { PageNotFound, Navbar, Footer } from "../src/components/Components";
 import { Home, Todo, PomoClock } from "../src/pages/Pages";
+
 function App() {
 	return (
 		<div className="App flex flex-col min-h-screen">
