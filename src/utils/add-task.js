@@ -5,7 +5,6 @@ export const addTask = (
 	editTask,
 	tasks,
 	modalValues,
-	setErrorMessage,
 	setTasks,
 	onClose,
 	isEditing
