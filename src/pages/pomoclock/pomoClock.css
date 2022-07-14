@@ -16,9 +16,11 @@
 button:last-child {
     grid-column: 1 / 3;
 }
-.btn-primary{
+
+.btn-primary {
     font-size: 15px;
 }
+
 .CircularProgressbar .CircularProgressbar-text {
     fill: var(--light-bg);
 }
@@ -35,20 +37,24 @@ button:last-child {
     background: var(--light-bg);
     animation: show 0.3s linear;
 }
-.go-to-back{
+
+.go-to-back {
     color: var(--primary-color);
     top: 4%;
     right: 1%;
 }
-.back-btn{
+
+.back-btn {
     background: var(--light-bg);
 
 }
-.tag-style{
+
+.tag-style {
     background: var(--light-bg);
     color: var(--primary-color);
 
 }
+
 @keyframes show {
     0% {
         opacity: 0;
@@ -82,6 +88,11 @@ button:last-child {
         text-align: center;
         width: 50%;
         margin-left: 9rem;
+    }
+
+    .go-to-back {
+        top: 15%;
+        right: 2%;
     }
 }
 
