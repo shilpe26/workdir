@@ -4,7 +4,7 @@
 
 ### Workdir Functionalities
 
-    ✔️Add, Delete, Update a task
+    ✔️Add, Delete, Update a task, Add tags
     ✔️Pomodoro Clock Feature
     ✔️Start/Pause/Reset Clock
     ✔️Task Data is saved even after refreshing the page on local storage
@@ -17,8 +17,14 @@
 <strong>TASK PAGE</strong>
 ![Screenshot (558)](https://user-images.githubusercontent.com/56014170/169539578-1d8f71b9-7f13-44a1-a1dd-32d1b6be9086.png)
 
+
+<strong>ADD TAG</strong>
+![Screenshot (635)](https://user-images.githubusercontent.com/56014170/179401970-495cba06-6ac9-4a58-9e82-c14c14c3c56d.png)
+
+
 <strong>POMODORO PAGE</strong>
-![Screenshot (559)](https://user-images.githubusercontent.com/56014170/169539505-0c95d77f-175b-4041-a45d-67ed6c05d6a9.png)
+![Screenshot (636)](https://user-images.githubusercontent.com/56014170/179401948-0ed6b903-948e-47ff-88de-3a85c567ae76.png)
+
 
 <strong>TIME SYNC WITH TITLE</strong>
 
